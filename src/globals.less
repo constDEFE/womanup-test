@@ -1,0 +1,53 @@
+@import "./utils/variables.less";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: @fontXl;
+}
+
+label {
+  font-weight: 500;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-size: @fontMd;
+  font-weight: 600;
+  transition-duration: 100ms;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+input, textarea, select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid gray;
+  font-size: @fontMd;
+  font-weight: 500;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+dialog {
+  border: none;
+}
+
+body {
+  background: @bg no-repeat;
+  padding-top: 5rem;
+  min-height: 100vh;
+}

@@ -1,0 +1,49 @@
+@import "../../../utils/variables.less";
+
+.background {
+  position: fixed;
+  cursor: default;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #00000099;
+  display: flex;
+  align-items: center;
+}
+
+.dialog {
+  background: white;
+  margin: 0 auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  textarea {
+    width: 100%;
+    min-height: 50px;
+    max-height: 200px;
+    resize: vertical;
+  }
+} 
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.addButton {
+  background: @buttonGreen;
+  border: 2px solid @buttonGreenBorder;
+
+  &:hover {
+    background: @buttonGreenBorder;
+  }
+}
